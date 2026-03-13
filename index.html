@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Exams MCQs - Research & Epidemiology</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #F4F7F6;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #596A7A;
+            --primary-color: #4A90E2;
+            --correct-bg: #E8F8F5;
+            --correct-border: #27AE60;
+            --correct-text: #1E8449;
+            --wrong-bg: #FDEDEC;
+            --wrong-border: #E74C3C;
+            --wrong-text: #C0392B;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .mcq-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .mcq-card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .question {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .options li {
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            background-color: #F9FAFC;
+            border: 1px solid #E4E8F0;
+            border-radius: 8px;
+            font-size: 15px;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .options:not(.answered) li:hover {
+            background-color: #EAF2F8;
+            border-color: var(--primary-color);
+        }
+
+        .options li.correct {
+            background-color: var(--correct-bg);
+            border-color: var(--correct-border);
+            color: var(--correct-text);
+            font-weight: 600;
+        }
+
+        .options li.correct::after {
+            content: '✓';
+            position: absolute;
+            right: 16px;
+            color: var(--correct-border);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .options li.wrong {
+            background-color: var(--wrong-bg);
+            border-color: var(--wrong-border);
+            color: var(--wrong-text);
+            font-weight: 600;
+        }
+
+        .options li.wrong::after {
+            content: '✗';
+            position: absolute;
+            right: 16px;
+            color: var(--wrong-border);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .mcq-card { padding: 20px; }
+            .question { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Research Methodology - Past Exams</h1>
+        <p>Interactive MCQ Revision (Click to answer, click again to reset)</p>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">1. In a case-control study looking at the association between a specific drug (Tamoxifen) and uterine cancer, there were 139 cases who took the drug and 550 cases who did not. Among the controls, 58 took the drug and 953 did not. Calculate the Odds Ratio (OR) for developing uterine cancer among those taking the drug.</div>
+        <ul class="options">
+            <li>a) 1.50</li>
+            <li>b) 2.40</li>
+            <li class="correct-answer">c) 4.15</li>
+            <li>d) 0.24</li>
+            <li>e) 10.60</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">2. Which of the following statements is an example of a Null Hypothesis (H₀)?</div>
+        <ul class="options">
+            <li>a) Trained healthcare workers have lower infection rates than untrained ones.</li>
+            <li>b) There is a significant association between training and infection rates.</li>
+            <li class="correct-answer">c) There is no difference in infection rates between trained and untrained staff.</li>
+            <li>d) Untrained staff are more likely to cause hospital-acquired infections.</li>
+            <li>e) Proper training decreases the incidence of disease.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">3. The statement "To identify the relationship between sleep deprivation and academic performance" is best described as a/an:</div>
+        <ul class="options">
+            <li>a) Research Methodology</li>
+            <li>b) Alternative Hypothesis</li>
+            <li>c) Research Problem</li>
+            <li class="correct-answer">d) Study Objective</li>
+            <li>e) Ethical Consideration</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">4. Which study design is most appropriate for measuring the burden of a disease in a population at a specific point in time?</div>
+        <ul class="options">
+            <li class="correct-answer">a) Cross-sectional study</li>
+            <li>b) Prospective cohort study</li>
+            <li>c) Retrospective cohort study</li>
+            <li>d) Randomized controlled trial</li>
+            <li>e) Case-control study</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">5. In the FINER criteria used for formulating a good research question, what does the letter "F" stand for?</div>
+        <ul class="options">
+            <li>a) Factual</li>
+            <li>b) Focused</li>
+            <li>c) Flexible</li>
+            <li class="correct-answer">d) Feasible</li>
+            <li>e) Fundamental</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">6. A study started in 2010 by determining the alcohol exposure status of a group of healthy participants. The participants were then followed up, and testing for liver cancer was done between 2020 and 2024. What is the study design?</div>
+        <ul class="options">
+            <li>a) Cross-sectional study</li>
+            <li>b) Case-control study</li>
+            <li class="correct-answer">c) Prospective cohort study</li>
+            <li>d) Ecological study</li>
+            <li>e) Clinical trial</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">7. What is the primary measure of association calculated from a cohort study?</div>
+        <ul class="options">
+            <li>a) Odds Ratio</li>
+            <li>b) Prevalence</li>
+            <li class="correct-answer">c) Relative Risk</li>
+            <li>d) Standard Deviation</li>
+            <li>e) Absolute Risk</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">8. Which of the following best describes a well-formulated "Research Problem"?</div>
+        <ul class="options">
+            <li>a) It is a broad, open-ended question without boundaries.</li>
+            <li class="correct-answer">b) It is a specific, well-defined statement of the issue to be investigated.</li>
+            <li>c) It is the statistical method used to analyze data.</li>
+            <li>d) It is the expected outcome of the study.</li>
+            <li>e) It is a detailed timeline of the research phases.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">9. Which of the following is a true characteristic of a cross-sectional study?</div>
+        <ul class="options">
+            <li>a) It follows participants forward in time to determine incidence.</li>
+            <li>b) It moves retrospectively from disease to risk factor.</li>
+            <li class="correct-answer">c) Multiple variables (exposures and outcomes) can be assessed at the same time.</li>
+            <li>d) It provides the strongest evidence for causal relationships.</li>
+            <li>e) It relies heavily on randomization and blinding.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">10. A type of research that aims to solve practical, real-world problems and directly applies knowledge is known as:</div>
+        <ul class="options">
+            <li>a) Basic research</li>
+            <li>b) Theoretical research</li>
+            <li class="correct-answer">c) Applied research</li>
+            <li>d) Exploratory research</li>
+            <li>e) Fundamental research</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">11. Which study design allows researchers to calculate the "Incidence" of a disease directly?</div>
+        <ul class="options">
+            <li>a) Case-control study</li>
+            <li>b) Cross-sectional study</li>
+            <li class="correct-answer">c) Cohort study</li>
+            <li>d) Ecological study</li>
+            <li>e) Case report</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">12. A defining feature of a Case-Control study is that it:</div>
+        <ul class="options">
+            <li>a) Moves forward from exposure to disease outcome over time.</li>
+            <li>b) Measures prevalence at a single point in time.</li>
+            <li class="correct-answer">c) Moves backward from the disease to identify past risk factors.</li>
+            <li>d) Randomly assigns interventions to participants.</li>
+            <li>e) Eliminates recall bias entirely.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">13. What is a major limitation of cross-sectional studies?</div>
+        <ul class="options">
+            <li>a) They are usually the most expensive studies to conduct.</li>
+            <li>b) They suffer from high loss to follow-up rates.</li>
+            <li>c) They cannot measure the prevalence of a condition.</li>
+            <li class="correct-answer">d) They don't provide solid evidence for a causal relationship.</li>
+            <li>e) They cannot be used to generate hypotheses.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">14. To measure the efficacy of new math room classes, students were randomly assigned to either the new class format or the traditional format. This is an example of a/an:</div>
+        <ul class="options">
+            <li>a) Observational cohort study</li>
+            <li>b) Cross-sectional study</li>
+            <li>c) Case-control study</li>
+            <li class="correct-answer">d) Interventional study</li>
+            <li>e) Ecological study</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">15. The section of a research protocol that details exactly how the research is conducted (including study design, setting, and data collection) is the:</div>
+        <ul class="options">
+            <li>a) Introduction</li>
+            <li>b) Literature Review</li>
+            <li class="correct-answer">c) Methodology</li>
+            <li>d) Budget and Timeline</li>
+            <li>e) Expected Outcomes</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">16. When setting research objectives, they should meet the "SMART" criteria. What does SMART stand for?</div>
+        <ul class="options">
+            <li class="correct-answer">a) Specific, Measurable, Achievable, Relevant, Time-bound</li>
+            <li>b) Simple, Meaningful, Accurate, Reliable, Tested</li>
+            <li>c) Specific, Multiple, Analytical, Realistic, Timely</li>
+            <li>d) Standardized, Measurable, Applicable, Robust, Transparent</li>
+            <li>e) Structured, Methodological, Actionable, Relevant, Theoretical</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">17. Which of the following is an example of an Alternative Hypothesis?</div>
+        <ul class="options">
+            <li>a) There is no difference in anxiety levels between first-year and final-year students.</li>
+            <li>b) Diet has no effect on blood pressure levels.</li>
+            <li class="correct-answer">c) Females have more sleep disturbances than males.</li>
+            <li>d) There is no association between smoking and lung capacity.</li>
+            <li>e) Both groups will show the exact same response to the medication.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">18. Research conducted in collaboration with practitioners to address specific community or organizational challenges is called:</div>
+        <ul class="options">
+            <li>a) Basic research</li>
+            <li class="correct-answer">b) Action research</li>
+            <li>c) Descriptive research</li>
+            <li>d) Explanatory research</li>
+            <li>e) Quantitative research</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">19. Scientific validity in a research study is primarily ensured by:</div>
+        <ul class="options">
+            <li>a) Securing large amounts of funding.</li>
+            <li class="correct-answer">b) Using appropriate and rigorous research techniques.</li>
+            <li>c) Publishing in a high-impact journal.</li>
+            <li>d) Selecting only healthy participants.</li>
+            <li>e) Completing the study in a short timeframe.</li>
+        </ul>
+    </div>
+
+    <div class="mcq-card">
+        <div class="question">20. What is the main purpose of a Phase IV clinical trial?</div>
+        <ul class="options">
+            <li>a) To test the drug on a small group of healthy volunteers for the first time.</li>
+            <li>b) To determine the maximum tolerated dose.</li>
+            <li class="correct-answer">c) To monitor long-term adverse effects after the drug is approved and marketed.</li>
+            <li>d) To conduct the first randomized controlled trial against a placebo.</li>
+            <li>e) To evaluate the drug's efficacy on animal models.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    const allOptions = document.querySelectorAll('.options li');
+
+    allOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const parentList = this.parentElement;
+            
+            // Reset if already answered
+            if (parentList.classList.contains('answered')) {
+                parentList.classList.remove('answered');
+                
+                const children = parentList.querySelectorAll('li');
+                children.forEach(child => {
+                    child.classList.remove('correct');
+                    child.classList.remove('wrong');
+                });
+            } 
+            // Mark answer if not answered yet
+            else {
+                parentList.classList.add('answered');
+                
+                if (this.classList.contains('correct-answer')) {
+                    this.classList.add('correct');
+                } else {
+                    this.classList.add('wrong');
+                    const correctAnswer = parentList.querySelector('.correct-answer');
+                    if (correctAnswer) {
+                        correctAnswer.classList.add('correct');
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
